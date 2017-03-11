@@ -1,0 +1,6 @@
+<div class="list-group" infinite-scroll infiniteScrollContainer="[infinite-scroll]" (scrolled)="onScrollDown()">
+  <a *ngFor="let item of listService.list"
+    class="list-group-item"
+    [ngClass]="{'active': item===selectedItem}"
+    (click)="onItemClicked(item)">{{item.id}}</a>
+</div>

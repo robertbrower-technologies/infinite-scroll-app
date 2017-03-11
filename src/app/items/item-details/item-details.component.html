@@ -1,0 +1,23 @@
+<h3>Details</h3>
+<div>
+  <p>
+    <span>ID: {{item?.id}}</span>
+  </p>
+  <p>
+    <span>Thumbnail:</span>
+  </p>
+  <div>
+    <img src="assets/images/cat-1285634_960_720.png">
+  </div>
+</div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <form class="navbar-form navbar-left">
+        <button type="button" class="btn btn-default" (click)="prev()" [disabled]="index===0"><span class="glyphicon glyphicon-chevron-left"></span></button>
+        <button type="button" class="btn btn-default" (click)="next()" [disabled]="index===listService.list.length-1 && listService.endOfList"><span class="glyphicon glyphicon-chevron-right"></span></button>
+      </form>
+      <form class="navbar-form navbar-left">
+        <button type="button" class="btn btn-default" (click)="close()"><span class="glyphicon glyphicon-remove"></span></button>
+      </form>
+  </div><!-- /.container-fluid -->
+</nav>

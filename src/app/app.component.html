@@ -1,5 +1,3 @@
 <h1>Header</h1>
-<div class="list-group" infinite-scroll infiniteScrollContainer="[infinite-scroll]" (scrolled)="onScrollDown()">
-  <a *ngFor="let item of list" class="list-group-item" (click)="onListItemClicked(item)">{{item.id}}</a>
-</div>
+<router-outlet></router-outlet>
 <h1>Footer</h1>

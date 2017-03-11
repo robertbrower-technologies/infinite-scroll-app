@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-/* @import url("flex-styles.css"); */
 @import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
 @import url('../node_modules/bootstrap/dist/css/bootstrap-theme.min.css');
 
@@ -8,12 +7,52 @@ app-root {
     display: flex;
     -webkit-flex-direction: column; /* Safari */
     flex-direction:         column;
+    padding: 10px;
 }
-app-root .list-group {
-    margin: 0;
+app-root h1 {
+    -webkit-flex-grow: 0; /* Safari */
+    flex-grow:         0;
+    -webkit-flex-shrink: 0; /* Safari */
+    flex-shrink:         0;
+}
+app-items {
+    -webkit-flex-grow: 1; /* Safari */
+    flex-grow:         1;
+    -webkit-flex-shrink: 1; /* Safari */
+    flex-shrink:         1;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: row; /* Safari */
+    flex-direction:         row;
+}
+app-items-list, app-item-details {
+    -webkit-flex-grow: 1; /* Safari */
+    flex-grow:         1;
+    -webkit-flex-shrink: 1; /* Safari */
+    flex-shrink:         1;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+}
+app-items-list .list-group {
     -webkit-flex-grow: 1; /* Safari */
     flex-grow:         1;
     -webkit-flex-shrink: 1; /* Safari */
     flex-shrink:         1;
     overflow-y: auto;
+}
+
+app-item-details h3, app-item-details nav {
+    -webkit-flex-grow: 0; /* Safari */
+    flex-grow:         0;
+    -webkit-flex-shrink: 0; /* Safari */
+    flex-shrink:         0;
+}
+
+app-item-details div {
+    -webkit-flex-grow: 1; /* Safari */
+    flex-grow:         1;
+    -webkit-flex-shrink: 1; /* Safari */
+    flex-shrink:         1;
 }
