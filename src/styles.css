@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import url("flex-styles.css"); */
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min.css');
+@import url('../node_modules/bootstrap/dist/css/bootstrap-theme.min.css');
+
+app-root {
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    -webkit-flex-direction: column; /* Safari */
+    flex-direction:         column;
+}
+app-root .list-group {
+    margin: 0;
+    -webkit-flex-grow: 1; /* Safari */
+    flex-grow:         1;
+    -webkit-flex-shrink: 1; /* Safari */
+    flex-shrink:         1;
+    overflow-y: auto;
+}
